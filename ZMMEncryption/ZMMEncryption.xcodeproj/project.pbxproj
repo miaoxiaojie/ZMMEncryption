@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A13889123C456EA0077C399 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A13889023C456EA0077C399 /* ReadMe.txt */; };
+		0A13889423C45A4B0077C399 /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A13889323C45A4B0077C399 /* libSystem.tbd */; };
+		0A13889823C475160077C399 /* ZMMFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13889723C475160077C399 /* ZMMFileUtil.m */; };
+		0A13889A23C48B7D0077C399 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A13889923C48B7D0077C399 /* Security.framework */; };
+		0A13889E23C492010077C399 /* ZMMSecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13889D23C492010077C399 /* ZMMSecurityUtil.m */; };
+		0A1388DE23C5CA4B0077C399 /* RSAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388DD23C5CA4B0077C399 /* RSAModule.m */; };
+		0A1388E123C5CA600077C399 /* AESModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388E023C5CA600077C399 /* AESModule.m */; };
+		0A1388E523C5CF0C0077C399 /* ZMMEncryptionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388E423C5CF0C0077C399 /* ZMMEncryptionCenter.m */; };
+		0A1388EA23C5DF0E0077C399 /* AESAndRSAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388E923C5DF0E0077C399 /* AESAndRSAModule.m */; };
+		0A1388ED23C5DF240077C399 /* Base64Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388EC23C5DF240077C399 /* Base64Module.m */; };
+		0A1388F023C5DF350077C399 /* MD5Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388EF23C5DF350077C399 /* MD5Module.m */; };
+		0A1388F323C5DF720077C399 /* SHA256Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388F223C5DF720077C399 /* SHA256Module.m */; };
+		0A1388F923C5E0AA0077C399 /* SHA256BadModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1388F823C5E0AA0077C399 /* SHA256BadModule.m */; };
+		0A35F0B223BF472A005D7D29 /* ZMMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35F0B123BF472A005D7D29 /* ZMMBase64.m */; };
+		0A35F0B523BF49F0005D7D29 /* ZMMEncryptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35F0B423BF49F0005D7D29 /* ZMMEncryptionModel.m */; };
+		0A3BA41423BF377D00CA0A1E /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BA41323BF377D00CA0A1E /* NSString+AES256.m */; };
+		0A53910423C072A50097BA04 /* NSData+Transfor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A53910323C072A50097BA04 /* NSData+Transfor.m */; };
+		0A8606A423BB541700A0130C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606A323BB541700A0130C /* AppDelegate.m */; };
+		0A8606A723BB541700A0130C /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606A623BB541700A0130C /* SceneDelegate.mm */; };
+		0A8606AA23BB541700A0130C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606A923BB541700A0130C /* ViewController.m */; };
+		0A8606AD23BB541700A0130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8606AB23BB541700A0130C /* Main.storyboard */; };
+		0A8606AF23BB541900A0130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8606AE23BB541900A0130C /* Assets.xcassets */; };
+		0A8606B223BB541900A0130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8606B023BB541900A0130C /* LaunchScreen.storyboard */; };
+		0A8606B523BB541900A0130C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606B423BB541900A0130C /* main.m */; };
+		0A8606BF23BB541900A0130C /* ZMMEncryptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606BE23BB541900A0130C /* ZMMEncryptionTests.m */; };
+		0A8606CA23BB541900A0130C /* ZMMEncryptionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606C923BB541900A0130C /* ZMMEncryptionUITests.m */; };
+		0A8606DB23BB5D9300A0130C /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606DA23BB5D9300A0130C /* NSData+AES256.m */; };
+		0A8606DE23BB67C000A0130C /* NSString+Transfor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8606DD23BB67C000A0130C /* NSString+Transfor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A8606BB23BB541900A0130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A86069723BB541700A0130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A86069E23BB541700A0130C;
+			remoteInfo = ZMMEncryption;
+		};
+		0A8606C623BB541900A0130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A86069723BB541700A0130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A86069E23BB541700A0130C;
+			remoteInfo = ZMMEncryption;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A13889023C456EA0077C399 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		0A13889323C45A4B0077C399 /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
+		0A13889623C475160077C399 /* ZMMFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMFileUtil.h; sourceTree = "<group>"; };
+		0A13889723C475160077C399 /* ZMMFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMFileUtil.m; sourceTree = "<group>"; };
+		0A13889923C48B7D0077C399 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A13889C23C492010077C399 /* ZMMSecurityUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMSecurityUtil.h; sourceTree = "<group>"; };
+		0A13889D23C492010077C399 /* ZMMSecurityUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMSecurityUtil.m; sourceTree = "<group>"; };
+		0A1388DC23C5CA4B0077C399 /* RSAModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAModule.h; sourceTree = "<group>"; };
+		0A1388DD23C5CA4B0077C399 /* RSAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAModule.m; sourceTree = "<group>"; };
+		0A1388DF23C5CA600077C399 /* AESModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AESModule.h; sourceTree = "<group>"; };
+		0A1388E023C5CA600077C399 /* AESModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESModule.m; sourceTree = "<group>"; };
+		0A1388E323C5CF0C0077C399 /* ZMMEncryptionCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMEncryptionCenter.h; sourceTree = "<group>"; };
+		0A1388E423C5CF0C0077C399 /* ZMMEncryptionCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMEncryptionCenter.m; sourceTree = "<group>"; };
+		0A1388E723C5D4C60077C399 /* ZMMEncryptionInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMEncryptionInterface.h; sourceTree = "<group>"; };
+		0A1388E823C5DF0E0077C399 /* AESAndRSAModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AESAndRSAModule.h; sourceTree = "<group>"; };
+		0A1388E923C5DF0E0077C399 /* AESAndRSAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESAndRSAModule.m; sourceTree = "<group>"; };
+		0A1388EB23C5DF240077C399 /* Base64Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64Module.h; sourceTree = "<group>"; };
+		0A1388EC23C5DF240077C399 /* Base64Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64Module.m; sourceTree = "<group>"; };
+		0A1388EE23C5DF350077C399 /* MD5Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD5Module.h; sourceTree = "<group>"; };
+		0A1388EF23C5DF350077C399 /* MD5Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD5Module.m; sourceTree = "<group>"; };
+		0A1388F123C5DF720077C399 /* SHA256Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHA256Module.h; sourceTree = "<group>"; };
+		0A1388F223C5DF720077C399 /* SHA256Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHA256Module.m; sourceTree = "<group>"; };
+		0A1388F723C5E0AA0077C399 /* SHA256BadModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHA256BadModule.h; sourceTree = "<group>"; };
+		0A1388F823C5E0AA0077C399 /* SHA256BadModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHA256BadModule.m; sourceTree = "<group>"; };
+		0A35F0B023BF472A005D7D29 /* ZMMBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMBase64.h; sourceTree = "<group>"; };
+		0A35F0B123BF472A005D7D29 /* ZMMBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMBase64.m; sourceTree = "<group>"; };
+		0A35F0B323BF49F0005D7D29 /* ZMMEncryptionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMEncryptionModel.h; sourceTree = "<group>"; };
+		0A35F0B423BF49F0005D7D29 /* ZMMEncryptionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMEncryptionModel.m; sourceTree = "<group>"; };
+		0A3BA41223BF377D00CA0A1E /* NSString+AES256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AES256.h"; sourceTree = "<group>"; };
+		0A3BA41323BF377D00CA0A1E /* NSString+AES256.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
+		0A53910223C072A50097BA04 /* NSData+Transfor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Transfor.h"; sourceTree = "<group>"; };
+		0A53910323C072A50097BA04 /* NSData+Transfor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Transfor.m"; sourceTree = "<group>"; };
+		0A86069F23BB541700A0130C /* ZMMEncryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMMEncryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8606A223BB541700A0130C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A8606A323BB541700A0130C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A8606A523BB541700A0130C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0A8606A623BB541700A0130C /* SceneDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneDelegate.mm; sourceTree = "<group>"; };
+		0A8606A823BB541700A0130C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A8606A923BB541700A0130C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A8606AC23BB541700A0130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A8606AE23BB541900A0130C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A8606B123BB541900A0130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A8606B323BB541900A0130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8606B423BB541900A0130C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A8606BA23BB541900A0130C /* ZMMEncryptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMMEncryptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8606BE23BB541900A0130C /* ZMMEncryptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMEncryptionTests.m; sourceTree = "<group>"; };
+		0A8606C023BB541900A0130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8606C523BB541900A0130C /* ZMMEncryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMMEncryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8606C923BB541900A0130C /* ZMMEncryptionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMEncryptionUITests.m; sourceTree = "<group>"; };
+		0A8606CB23BB541900A0130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8606D923BB5D9300A0130C /* NSData+AES256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		0A8606DA23BB5D9300A0130C /* NSData+AES256.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		0A8606DC23BB67C000A0130C /* NSString+Transfor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Transfor.h"; sourceTree = "<group>"; };
+		0A8606DD23BB67C000A0130C /* NSString+Transfor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Transfor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A86069C23BB541700A0130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A13889A23C48B7D0077C399 /* Security.framework in Frameworks */,
+				0A13889423C45A4B0077C399 /* libSystem.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606B723BB541900A0130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606C223BB541900A0130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A13889223C45A4B0077C399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A13889923C48B7D0077C399 /* Security.framework */,
+				0A13889323C45A4B0077C399 /* libSystem.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A13889523C475070077C399 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				0A13889623C475160077C399 /* ZMMFileUtil.h */,
+				0A13889723C475160077C399 /* ZMMFileUtil.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		0A13889B23C491F30077C399 /* SecurityUtil */ = {
+			isa = PBXGroup;
+			children = (
+				0A13889C23C492010077C399 /* ZMMSecurityUtil.h */,
+				0A13889D23C492010077C399 /* ZMMSecurityUtil.m */,
+			);
+			path = SecurityUtil;
+			sourceTree = "<group>";
+		};
+		0A1388D223C5C88F0077C399 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388E623C5D2430077C399 /* Interface */,
+				0A1388D323C5CA160077C399 /* AES */,
+				0A1388D423C5CA160077C399 /* AESAndRSA */,
+				0A1388D823C5CA160077C399 /* Base64 */,
+				0A1388D623C5CA160077C399 /* MD5 */,
+				0A1388D523C5CA160077C399 /* RSA */,
+				0A1388D723C5CA160077C399 /* SHA256 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0A1388D323C5CA160077C399 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388DF23C5CA600077C399 /* AESModule.h */,
+				0A1388E023C5CA600077C399 /* AESModule.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		0A1388D423C5CA160077C399 /* AESAndRSA */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388E823C5DF0E0077C399 /* AESAndRSAModule.h */,
+				0A1388E923C5DF0E0077C399 /* AESAndRSAModule.m */,
+			);
+			path = AESAndRSA;
+			sourceTree = "<group>";
+		};
+		0A1388D523C5CA160077C399 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388DC23C5CA4B0077C399 /* RSAModule.h */,
+				0A1388DD23C5CA4B0077C399 /* RSAModule.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		0A1388D623C5CA160077C399 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388EE23C5DF350077C399 /* MD5Module.h */,
+				0A1388EF23C5DF350077C399 /* MD5Module.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		0A1388D723C5CA160077C399 /* SHA256 */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388F123C5DF720077C399 /* SHA256Module.h */,
+				0A1388F223C5DF720077C399 /* SHA256Module.m */,
+				0A1388F723C5E0AA0077C399 /* SHA256BadModule.h */,
+				0A1388F823C5E0AA0077C399 /* SHA256BadModule.m */,
+			);
+			path = SHA256;
+			sourceTree = "<group>";
+		};
+		0A1388D823C5CA160077C399 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388EB23C5DF240077C399 /* Base64Module.h */,
+				0A1388EC23C5DF240077C399 /* Base64Module.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		0A1388E223C5CC470077C399 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388E323C5CF0C0077C399 /* ZMMEncryptionCenter.h */,
+				0A1388E423C5CF0C0077C399 /* ZMMEncryptionCenter.m */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		0A1388E623C5D2430077C399 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388E723C5D4C60077C399 /* ZMMEncryptionInterface.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		0A35F0AF23BF4702005D7D29 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				0A35F0B023BF472A005D7D29 /* ZMMBase64.h */,
+				0A35F0B123BF472A005D7D29 /* ZMMBase64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		0A3BA41523BF39BB00CA0A1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A35F0B323BF49F0005D7D29 /* ZMMEncryptionModel.h */,
+				0A35F0B423BF49F0005D7D29 /* ZMMEncryptionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A83B69E23C41EF700B0AB6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A13889023C456EA0077C399 /* ReadMe.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A86069623BB541700A0130C = {
+			isa = PBXGroup;
+			children = (
+				0A8606A123BB541700A0130C /* ZMMEncryption */,
+				0A8606BD23BB541900A0130C /* ZMMEncryptionTests */,
+				0A8606C823BB541900A0130C /* ZMMEncryptionUITests */,
+				0A8606A023BB541700A0130C /* Products */,
+				0A13889223C45A4B0077C399 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A8606A023BB541700A0130C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A86069F23BB541700A0130C /* ZMMEncryption.app */,
+				0A8606BA23BB541900A0130C /* ZMMEncryptionTests.xctest */,
+				0A8606C523BB541900A0130C /* ZMMEncryptionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A8606A123BB541700A0130C /* ZMMEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				0A1388E223C5CC470077C399 /* Center */,
+				0A1388D223C5C88F0077C399 /* Modules */,
+				0A83B69E23C41EF700B0AB6E /* Resources */,
+				0A3BA41523BF39BB00CA0A1E /* Model */,
+				0A8606D723BB5CC000A0130C /* Util */,
+				0A8606A223BB541700A0130C /* AppDelegate.h */,
+				0A8606A323BB541700A0130C /* AppDelegate.m */,
+				0A8606A523BB541700A0130C /* SceneDelegate.h */,
+				0A8606A623BB541700A0130C /* SceneDelegate.mm */,
+				0A8606A823BB541700A0130C /* ViewController.h */,
+				0A8606A923BB541700A0130C /* ViewController.m */,
+				0A8606AB23BB541700A0130C /* Main.storyboard */,
+				0A8606AE23BB541900A0130C /* Assets.xcassets */,
+				0A8606B023BB541900A0130C /* LaunchScreen.storyboard */,
+				0A8606B323BB541900A0130C /* Info.plist */,
+				0A8606B423BB541900A0130C /* main.m */,
+			);
+			path = ZMMEncryption;
+			sourceTree = "<group>";
+		};
+		0A8606BD23BB541900A0130C /* ZMMEncryptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A8606BE23BB541900A0130C /* ZMMEncryptionTests.m */,
+				0A8606C023BB541900A0130C /* Info.plist */,
+			);
+			path = ZMMEncryptionTests;
+			sourceTree = "<group>";
+		};
+		0A8606C823BB541900A0130C /* ZMMEncryptionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A8606C923BB541900A0130C /* ZMMEncryptionUITests.m */,
+				0A8606CB23BB541900A0130C /* Info.plist */,
+			);
+			path = ZMMEncryptionUITests;
+			sourceTree = "<group>";
+		};
+		0A8606D723BB5CC000A0130C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0A13889B23C491F30077C399 /* SecurityUtil */,
+				0A13889523C475070077C399 /* File */,
+				0A35F0AF23BF4702005D7D29 /* Base64 */,
+				0A8606D823BB5D7000A0130C /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0A8606D823BB5D7000A0130C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A8606D923BB5D9300A0130C /* NSData+AES256.h */,
+				0A8606DA23BB5D9300A0130C /* NSData+AES256.m */,
+				0A3BA41223BF377D00CA0A1E /* NSString+AES256.h */,
+				0A3BA41323BF377D00CA0A1E /* NSString+AES256.m */,
+				0A8606DC23BB67C000A0130C /* NSString+Transfor.h */,
+				0A8606DD23BB67C000A0130C /* NSString+Transfor.m */,
+				0A53910223C072A50097BA04 /* NSData+Transfor.h */,
+				0A53910323C072A50097BA04 /* NSData+Transfor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A86069E23BB541700A0130C /* ZMMEncryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8606CE23BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryption" */;
+			buildPhases = (
+				0A86069B23BB541700A0130C /* Sources */,
+				0A86069C23BB541700A0130C /* Frameworks */,
+				0A86069D23BB541700A0130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZMMEncryption;
+			productName = ZMMEncryption;
+			productReference = 0A86069F23BB541700A0130C /* ZMMEncryption.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A8606B923BB541900A0130C /* ZMMEncryptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8606D123BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryptionTests" */;
+			buildPhases = (
+				0A8606B623BB541900A0130C /* Sources */,
+				0A8606B723BB541900A0130C /* Frameworks */,
+				0A8606B823BB541900A0130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A8606BC23BB541900A0130C /* PBXTargetDependency */,
+			);
+			name = ZMMEncryptionTests;
+			productName = ZMMEncryptionTests;
+			productReference = 0A8606BA23BB541900A0130C /* ZMMEncryptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A8606C423BB541900A0130C /* ZMMEncryptionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8606D423BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryptionUITests" */;
+			buildPhases = (
+				0A8606C123BB541900A0130C /* Sources */,
+				0A8606C223BB541900A0130C /* Frameworks */,
+				0A8606C323BB541900A0130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A8606C723BB541900A0130C /* PBXTargetDependency */,
+			);
+			name = ZMMEncryptionUITests;
+			productName = ZMMEncryptionUITests;
+			productReference = 0A8606C523BB541900A0130C /* ZMMEncryptionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A86069723BB541700A0130C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = zmm;
+				TargetAttributes = {
+					0A86069E23BB541700A0130C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					0A8606B923BB541900A0130C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 0A86069E23BB541700A0130C;
+					};
+					0A8606C423BB541900A0130C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 0A86069E23BB541700A0130C;
+					};
+				};
+			};
+			buildConfigurationList = 0A86069A23BB541700A0130C /* Build configuration list for PBXProject "ZMMEncryption" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A86069623BB541700A0130C;
+			productRefGroup = 0A8606A023BB541700A0130C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A86069E23BB541700A0130C /* ZMMEncryption */,
+				0A8606B923BB541900A0130C /* ZMMEncryptionTests */,
+				0A8606C423BB541900A0130C /* ZMMEncryptionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A86069D23BB541700A0130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8606B223BB541900A0130C /* LaunchScreen.storyboard in Resources */,
+				0A8606AF23BB541900A0130C /* Assets.xcassets in Resources */,
+				0A13889123C456EA0077C399 /* ReadMe.txt in Resources */,
+				0A8606AD23BB541700A0130C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606B823BB541900A0130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606C323BB541900A0130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A86069B23BB541700A0130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1388ED23C5DF240077C399 /* Base64Module.m in Sources */,
+				0A1388F323C5DF720077C399 /* SHA256Module.m in Sources */,
+				0A8606AA23BB541700A0130C /* ViewController.m in Sources */,
+				0A1388F023C5DF350077C399 /* MD5Module.m in Sources */,
+				0A3BA41423BF377D00CA0A1E /* NSString+AES256.m in Sources */,
+				0A8606DB23BB5D9300A0130C /* NSData+AES256.m in Sources */,
+				0A1388F923C5E0AA0077C399 /* SHA256BadModule.m in Sources */,
+				0A1388E123C5CA600077C399 /* AESModule.m in Sources */,
+				0A1388EA23C5DF0E0077C399 /* AESAndRSAModule.m in Sources */,
+				0A1388DE23C5CA4B0077C399 /* RSAModule.m in Sources */,
+				0A53910423C072A50097BA04 /* NSData+Transfor.m in Sources */,
+				0A8606A423BB541700A0130C /* AppDelegate.m in Sources */,
+				0A13889823C475160077C399 /* ZMMFileUtil.m in Sources */,
+				0A1388E523C5CF0C0077C399 /* ZMMEncryptionCenter.m in Sources */,
+				0A13889E23C492010077C399 /* ZMMSecurityUtil.m in Sources */,
+				0A35F0B523BF49F0005D7D29 /* ZMMEncryptionModel.m in Sources */,
+				0A8606B523BB541900A0130C /* main.m in Sources */,
+				0A8606DE23BB67C000A0130C /* NSString+Transfor.m in Sources */,
+				0A8606A723BB541700A0130C /* SceneDelegate.mm in Sources */,
+				0A35F0B223BF472A005D7D29 /* ZMMBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606B623BB541900A0130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8606BF23BB541900A0130C /* ZMMEncryptionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8606C123BB541900A0130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8606CA23BB541900A0130C /* ZMMEncryptionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A8606BC23BB541900A0130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A86069E23BB541700A0130C /* ZMMEncryption */;
+			targetProxy = 0A8606BB23BB541900A0130C /* PBXContainerItemProxy */;
+		};
+		0A8606C723BB541900A0130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A86069E23BB541700A0130C /* ZMMEncryption */;
+			targetProxy = 0A8606C623BB541900A0130C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A8606AB23BB541700A0130C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8606AC23BB541700A0130C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A8606B023BB541900A0130C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8606B123BB541900A0130C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A8606CC23BB541900A0130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A8606CD23BB541900A0130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A8606CF23BB541900A0130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZMMEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "-fno-stack-protector";
+				"OTHER_CFLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A8606D023BB541900A0130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZMMEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryption;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A8606D223BB541900A0130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZMMEncryptionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryptionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMMEncryption.app/ZMMEncryption";
+			};
+			name = Debug;
+		};
+		0A8606D323BB541900A0130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZMMEncryptionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryptionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMMEncryption.app/ZMMEncryption";
+			};
+			name = Release;
+		};
+		0A8606D523BB541900A0130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZMMEncryptionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryptionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZMMEncryption;
+			};
+			name = Debug;
+		};
+		0A8606D623BB541900A0130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZMMEncryptionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zmm.iphone.ZMMEncryptionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZMMEncryption;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A86069A23BB541700A0130C /* Build configuration list for PBXProject "ZMMEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8606CC23BB541900A0130C /* Debug */,
+				0A8606CD23BB541900A0130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8606CE23BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8606CF23BB541900A0130C /* Debug */,
+				0A8606D023BB541900A0130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8606D123BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8606D223BB541900A0130C /* Debug */,
+				0A8606D323BB541900A0130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8606D423BB541900A0130C /* Build configuration list for PBXNativeTarget "ZMMEncryptionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8606D523BB541900A0130C /* Debug */,
+				0A8606D623BB541900A0130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A86069723BB541700A0130C /* Project object */;
+}
